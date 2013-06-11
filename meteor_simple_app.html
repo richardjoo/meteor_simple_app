@@ -3,11 +3,27 @@
 </head>
 
 <body>
-  {{> hello}}
+  <div id="container">{{> random_number}}</div>
 </body>
 
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+<template name="random_number">
+  	<h1>Random Number</h1>
+
+ 	<form id="new_entry">
+	 	<input type="text" name="name" id="new_entry_name">
+	  	<input type="submit" value="Add">
+	</form>
+	
+	<button id="pick">Pick number</button>
+
+	<ul id="number_list">
+		{{#each number_list}}
+	  		<li>
+	  			{{number}}
+	  			{{#if picked}}
+					<span> -- Picked</span>
+				{{/if}}
+	  		</li>
+		{{/each}}
+	</ul>
 </template>

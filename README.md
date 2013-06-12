@@ -7,4 +7,5 @@ This is just one step more advanced than the absolutely the basic meteor app.
 4. add some stuff to coffeescript
 
 This is very similar from the railscasts I followed.
-All the work credit goes to railscasts.
+It is nothing but to see how the meteor works.
+You are more than welcome to get this and check it out.
